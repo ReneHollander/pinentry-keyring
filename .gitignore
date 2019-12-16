@@ -1,0 +1,4 @@
+bazel-bin
+bazel-out
+bazel-pinentry-keyring
+bazel-testlogs

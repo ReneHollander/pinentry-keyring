@@ -1,2 +1,2 @@
 # pinentry-keyring
-Pinentry using system Keyring
+Pinentry using system Keyring.
