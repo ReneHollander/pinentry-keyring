@@ -5,5 +5,8 @@ buildGoModule rec {
   src = lib.cleanSource ./.;
   vendorHash = "sha256-fr67mNicDA60Y4X8wY/P/4odALEGTfbYmWUnvwaubvc=";
   ldflags = [ "-w" "-s" "-X main.version=v${version}" ];
-  meta = with lib; { supportedPlatforms = platforms.linux; };
+  meta = with lib; {
+    mainProgram = "pinentry-keyring";
+    supportedPlatforms = platforms.linux;
+  };
 }
